@@ -33,7 +33,12 @@ gem 'rvm-capistrano'
  gem 'unicorn'
 
 # Deploy with Capistrano
- gem 'capistrano'
+group :development do
+  gem 'capistrano'
+  gem "capistrano-ext"
+  gem "capistrano_colors"
+  gem "capistrano-unicorn"
+end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
