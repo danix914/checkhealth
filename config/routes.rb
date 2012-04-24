@@ -1,4 +1,5 @@
 Health::Application.routes.draw do
+  match "/check_health" => 'welcome#check_health'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
